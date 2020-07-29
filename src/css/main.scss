@@ -17,13 +17,14 @@ body {
         }
     }
     #content{
-        margin: 35px;
+        margin-top: 5px;
         padding: 2.5vw;
-        width: 55vw;
+        width: 33.75vw;
+        height: 45vw;
         background: url('/src/images/paper.png') no-repeat;
         background-size: cover;
         background-position: center;
-        margin-left: 40vw;
+        margin-left: 60vw;
         #menu {
             display: flex;
             align-items: center;
@@ -37,23 +38,39 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: white;
                 border-bottom: 2px solid transparent;
                 transition: 350ms;
                 cursor: pointer;
                 &:hover {
-                    background-color: transparent;
+                    background-color: #ffffff57;
+                    color: black;
                 }
             }
 
         }
+        
         #list, #table, #table *{
             transition: 350ms;
         }
         #list {
             width: 100%;
+            height: 80%;
+            overflow-y: scroll;
+            #table {
         }
+        }
+    }
+    blockquote {
+        position: fixed;
+        left: 20vw;
+        top: 50vh;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 10px #000000;
+        background-color: #00000044;
+        padding: 10px;
     }
     
 }
@@ -63,5 +80,17 @@ body {
 @media only screen and (max-width: 1000px){
     body {
         background-position: -500px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #content{
+            margin: 0;
+            width: 82vw;
+            height: 110vw;
+        }
+        blockquote {
+            position: static;
+        }
     }
 }

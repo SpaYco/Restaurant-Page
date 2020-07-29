@@ -7,11 +7,13 @@ import render from './menu.js';
 import img from "../images/github.png";
 import paper from "../images/paper.png";
 import bg from "../images/background.jpg";
+import slogan from "./slogan.js";
 
 navbar()
 const menu = new Menu
 menu.add()
 menu.render(0);
+slogan()
 window.change = (num) => {
     menu.render(num)
 }
