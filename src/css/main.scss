@@ -166,3 +166,15 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 780px) {
+  body {
+    #content {
+      #menu {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
