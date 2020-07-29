@@ -13,7 +13,18 @@ module.exports = {
           test: /\.js$/,
           exclude: /node_modules/,
           use: ["babel-loader"]
-        }
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[path][name].[ext]'
+              }
+          }
+        ]
+      }
       ]
     },
     optimization: {
