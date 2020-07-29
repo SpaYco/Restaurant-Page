@@ -1,4 +1,8 @@
 export const navbar = () => {
+  const content = document.getElementById('content');
+  const navbar = document.createElement('nav');
+  navbar.classList.add('amber');
+  document.body.insertBefore(navbar, content);
   const nav = document.getElementsByTagName('nav')[0];
   nav.innerHTML = `<nav class="nav-extended">
     <div>
