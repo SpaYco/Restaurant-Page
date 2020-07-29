@@ -66,7 +66,62 @@ body {
       width: 100%;
       height: 80%;
       overflow-y: auto;
+      border: 1px solid #ffffffb2;
+      border-top: none;
     }
+  }
+
+  .contact-form {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.267);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 350ms;
+
+    form {
+      background-color: #8d6e63;
+      position: relative;
+      width: 20vw;
+      height: 10vw;
+      padding: 50px;
+      box-sizing: content-box;
+      box-shadow: 0 0 15px #000;
+
+      #email:focus + label {
+        color: #ffc107 !important;
+      }
+
+      #email:focus {
+        border-bottom: 1px solid #ffc107 !important;
+        box-shadow: 0 1px 0 0 #ffc107 !important;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      cursor: pointer;
+      transition: 350ms;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .contact-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transition: 350ms;
   }
 
   blockquote {
@@ -82,7 +137,7 @@ body {
 }
 
 .active-btn {
-  border-bottom: 2px solid black !important;
+  border-bottom: 2px solid #ee6e73 !important;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -101,6 +156,13 @@ body {
 
     blockquote {
       position: static;
+    }
+
+    .contact-form {
+      form {
+        width: 40vw;
+        height: 20vw;
+      }
     }
   }
 }
