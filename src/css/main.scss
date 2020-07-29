@@ -1,96 +1,106 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-body {
-    background: url('/src/images/background.jpg') no-repeat;
-    nav {
-        a {
-            i {
-                img {
-                    margin-top: 0.5vw;
-                    margin-right: -10px;
-                    height: 2.5vw;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    #content{
-        margin-top: 5px;
-        padding: 2.5vw;
-        width: 33.75vw;
-        height: 45vw;
-        background: url('/src/images/paper.png') no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-left: 60vw;
-        #menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 100px;
-            width: 100%;
-            li{
-                background-color: #5f5f5f3b;
-                height: 100%;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.5rem;
-                color: white;
-                border-bottom: 2px solid transparent;
-                transition: 350ms;
-                cursor: pointer;
-                &:hover {
-                    background-color: #ffffff57;
-                    color: black;
-                }
-            }
 
+body {
+  background: url('/src/images/background.jpg') no-repeat;
+
+  nav {
+    a {
+      i {
+        img {
+          margin-top: 0.5vw;
+          margin-right: -10px;
+          height: 2.5vw;
+          cursor: pointer;
         }
-        
-        #list, #table, #table *{
-            transition: 350ms;
-        }
-        #list {
-            width: 100%;
-            height: 80%;
-            overflow-y: scroll;
-            #table {
-        }
-        }
+      }
     }
-    blockquote {
-        position: fixed;
-        left: 20vw;
-        top: 50vh;
-        font-size: 2rem;
-        color: white;
-        text-shadow: 0 0 10px #000000;
-        background-color: #00000044;
-        padding: 10px;
-    }
-    
-}
-.active-btn {
-    border-bottom: 2px solid black !important;
-}
-@media only screen and (max-width: 1000px){
-    body {
-        background-position: -500px 0px;
+  }
+
+  #content {
+    margin-top: 5px;
+    padding: 2.5vw;
+    width: 33.75vw;
+    height: 45vw;
+    background: url('/src/images/paper.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 60vw;
+
+    #menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100px;
+      width: 100%;
+
+      li {
+        background-color: #5f5f5f3b;
+        height: 100%;
+        width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
-        #content{
-            margin: 0;
-            width: 82vw;
-            height: 110vw;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        border-bottom: 2px solid transparent;
+        transition: 350ms;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ffffff57;
+          color: black;
         }
-        blockquote {
-            position: static;
-        }
+      }
     }
+
+    #list,
+    #table,
+    #table * {
+      transition: 350ms;
+    }
+
+    #list {
+      width: 100%;
+      height: 80%;
+      overflow-y: auto;
+    }
+  }
+
+  blockquote {
+    position: fixed;
+    left: 20vw;
+    top: 50vh;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 10px #000;
+    background-color: #0004;
+    padding: 10px;
+  }
+}
+
+.active-btn {
+  border-bottom: 2px solid black !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-position: -500px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #content {
+      margin: 0;
+      width: 82vw;
+      height: 110vw;
+    }
+
+    blockquote {
+      position: static;
+    }
+  }
 }

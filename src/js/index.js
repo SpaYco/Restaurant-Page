@@ -1,19 +1,20 @@
-import "../css/main.scss";
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
-import navbar from './navbar.js';
-import Menu from './menu.js';
-import render from './menu.js';
-import img from "../images/github.png";
-import paper from "../images/paper.png";
-import bg from "../images/background.jpg";
-import slogan from "./slogan.js";
+import '../css/main.scss';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min';
+import navbarFunction from './navbar';
+/* eslint-disable */
+import MenuClass from './menu'; 
+import img from '../images/github.png';
+import paper from '../images/paper.png';
+import bg from '../images/background.jpg';
+import slogan from './slogan';
+/* eslint-enable */
 
-navbar()
-const menu = new Menu
-menu.add()
+navbarFunction();
+const menu = new MenuClass();
+menu.add();
 menu.render(0);
-slogan()
+slogan();
 window.change = (num) => {
-    menu.render(num)
-}
+  menu.render(num);
+};
