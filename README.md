@@ -22,9 +22,13 @@ Additional description about the project and its features.
 
 - npm install
 - open index.html from the dist folder
-> if you wanna make changes do them on the src folder 
-> if you want to preview changes live use *npm start* from your terminal
-> when you finish your changes, run *npm run build* to create the production files to the dist folder
+
+
+## Making Changes
+
+- if you wanna make changes do them on the src folder 
+- if you want to preview changes live use *npm start* from your terminal
+- when you finish your changes, run *npm run build* to create the production files to the dist folder
 
 ## Authors
 
