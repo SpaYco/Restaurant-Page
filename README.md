@@ -1,6 +1,6 @@
-# Project Name
+# Restaurant-Page
 
-> One paragraph statement about the project.
+> a responsive Restaurant Page where you can change the menus without refreshing the page
 
 ![screenshot](./app_screenshot.png)
 
@@ -8,50 +8,35 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML
+- SASS
+- JavaScript
+- WebPack
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/Spayco/Restaurant-Page/feature/dist/index.html)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- npm install
+- open index.html from the dist folder
 
 
-To get a local copy up and running follow these simple example steps.
+## Making Changes
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- if you wanna make changes do them on the src folder 
+- if you want to preview changes live use *npm start* from your terminal
+- when you finish your changes, run *npm run build* to create the production files to the dist folder
 
 ## Authors
 
-👤 **Author1**
+👤 **SpaYco**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@SpaYco](https://github.com/SpaYco)
+- Twitter: [@iSpaYco](https://twitter.com/iSpaYco)
+- Linkedin: [Aziz Mejri](https://linkedin.com/in/spayco)
 
 ## 🤝 Contributing
 
